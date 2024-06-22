@@ -1,0 +1,567 @@
+*{
+    margin:0;
+    padding:0;
+    outline:none;
+    border:none;
+    text-decoration:none;
+    box-sizing:border-box;
+    font-family:"Poppins",sans-serif;
+}
+body{
+    background: white;
+}
+.container{
+    display:flex;
+}
+.pfp{
+    width:70px;
+    border-radius: 50%;
+    margin: 20px;
+}
+.nama{
+    position:relative;
+    top:50px;
+    right:10px;
+    color:white;
+}
+.profile-box{
+    text-align:center;
+    display:flex;
+    margin:10px 0 0 10px;
+}
+nav{
+    position:sticky;
+    top:0;
+    bottom:0;
+    height:100vh;
+    Left:0;
+    background:#22185C;
+    width:300px;
+    overflow:hidden;
+    box-shadow:0 20px 35px black;
+}
+.logo{
+    text-align:center;
+    display:flex;
+    margin:10px 0 0 10px;
+}
+.logo img{
+    width:45px;
+    height:45px;
+    border-radius:20%;
+}
+.logo span{
+    font-weight:bold;
+    padding-left:15px;
+    font-size:18px;
+    text-transform:uppercase;
+}
+nav a{
+    position:relative;
+    color:white;
+    font-size:14px;
+    display:table;
+    width:280px;
+    padding:10px;
+    font-weight:bold;
+}
+nav .fas{
+    position:relative;
+    width:70px;
+    height:40px;
+    top:14px;
+    font-size:20px;
+    text-align:center;
+}
+.nav-item{
+    position:relative;
+    top:12px;
+    margin-left:10px;
+}
+nav a:hover{
+    background:rgba(255,255,255,0.75);
+    color:#2A3F54;
+}
+.Setting{
+    position:absolute;
+    bottom: 20px;;
+}
+.main{
+    position:relative;
+    padding:20px;
+    width:100%;
+}
+.main-top{
+    display:flex;
+    width:100%;
+}
+.main-top h1{
+    position:absolute;
+    right:45%;
+    font-size:50px;
+    color:black;
+}
+/*.main-top i{
+    position:absolute;
+    right:0;
+    margin:10px 30px;
+    color:rgba(43,63,84,255);
+    cursor:pointer;
+    font-size:30px;
+}*/
+.main-skills{
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px; /* Add padding to create space for the buttons */
+}
+.main-skills .card{
+    width:100%;
+    height:80vh;
+    margin:10px;
+    background:white;
+    border-radius:20px;
+    padding:10px;
+    box-shadow:0 20px 35px black;
+}
+.main-skills .card table{
+    width:100%;
+    height:100%;
+}
+.main-skills .buttons{
+    display: flex;
+    position: sticky;
+}
+.dropdown{
+    display:inline-block;
+    margin:10px;
+    padding:10px;
+}
+.dropdown button{
+    background:#22185C;
+    color:white;
+    border-radius: 10px;
+    padding:8px 15px;
+    font-size: 30px;
+    position:relative;
+    cursor:pointer;
+}
+.dropdown:hover button{
+    background:#22185C;
+    color:white;
+    border-radius: 0px;
+}
+.dropdown a{
+    display:block;
+    color:#22185C;
+    text-decoration: none;
+    padding:8px 15px;
+    
+}
+.dropdown a:hover{
+    background:#22185C;
+    color:white;
+}
+.dropdown .content{
+    display:none;
+    position:absolute;
+    background:white;
+}
+.dropdown:hover .content{
+    display:block;
+}
+
+
+.main-skills .teachers{
+    display: flex;
+    flex-wrap: wrap;
+    width:100%;
+    align-items: center;
+    justify-content: center
+}
+.main-skills .teacher{
+    width:30%;
+    height:50vh;
+    font-size:25px;
+    margin:10px;
+    background:white;
+    border-radius:20px;
+    padding:10px;
+    box-shadow:0 20px 35px rgba(0,0,0,0.25);
+}
+.main-skills .teacher h3{
+    text-align:center;
+    margin:10px;
+    text-transform:capitalize;
+}
+.main-skills .teacher p{
+    text-align:center;
+    font-size:12px;
+}
+.main-skills .teacher button{
+    top: 50%;
+    left: 50%;
+    transform: translate(-125%, 400%);
+    font-size:30px;
+    background:red;
+    color:white;
+    padding:7px 15px;
+    border-radius:10px;
+    margin-top:15px;
+    cursor:pointer;
+}
+.main-skills .teacher button:hover{
+    background:rgb(245, 135, 5);
+}
+.teacher img{
+    margin-left:100px;
+}
+.teachers img{
+    float:left;
+    display:block;
+    width:150px;
+    border-radius:50%;
+}
+.main-skills .card-dua{
+    width:100%;
+    height:50vh;
+    margin:10px;
+    padding:10px;
+}
+.main-skills .card-dua h2{
+    font-size:70px;
+    color:rgb(189, 189, 189);
+    text-align:center;
+}
+.main-skills .card-tiga{
+    width:100%;
+    height:200vh;
+    margin:10px;
+    background:white;
+    border-radius:20px;
+    padding:10px;
+    box-shadow:0 20px 35px black;
+}
+td a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none; /* Optional: Remove underline */
+}
+td a:hover{
+    background:lightgreen;
+}
+.book{
+    width:100%;
+    display:block;
+}
+.book h3{
+    padding-left:20px;
+    font-size:40px;
+    color:#2A3F54;
+}
+.book .card-booking{
+    width:100%;
+    height:15vh;
+    margin:10px;
+    background:#ECECEC;
+    border-radius:20px;
+    padding:10px;
+}
+.card-book{
+    width:100%;
+    display:flex;
+    flex-wrap: wrap;
+}
+.search{
+    --padding:14px;
+    width:max-content;
+    display:flex;
+    width:70%;
+    margin:20px;
+    align-items:center;
+    padding:var(--padding);
+    border-radius:28px;
+    background:rgb(217, 215, 215);
+}
+.search-input{
+    font-size:16px;
+    color:darkslategrey;
+    margin-left:var(--padding);
+    outline:none;
+    border:none;
+    background:transparent;
+    
+}
+.search-input::placeholder{
+    color:rgba(0,0,0,0.25);
+}
+.search-form {
+    display: flex;
+  }
+  
+  .clear-button{
+    margin:5px;
+    width:80px;
+    font-size: 20px;
+    height:40px;
+    transform:translate(0%,50%);
+    color:lightskyblue;
+    background-color: rgb(1, 1, 70);
+    border-radius: 10px;
+  }
+  .clear-button:hover{
+    background:lightskyblue;
+    color:rgb(1, 1, 70);
+  }
+  .search-button{
+    margin:5px;
+    width:80px;
+    font-size: 20px;
+    height:40px;
+    transform:translate(0%,50%);
+    color:lightskyblue;
+    background-color: rgb(1, 1, 70);
+    border-radius: 10px;
+  }
+  .search-button:hover{
+    background:lightskyblue;
+    color:rgb(1, 1, 70);
+  }
+  .popup .overlay{
+    position:fixed;
+    top:0px;
+    left:0px;
+    width:100vw;
+    height:100vh;
+    background:rgba(0,0,0,0.7);
+    z-index:1;
+    display:none;
+}
+.popup .content{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%) scale(0);
+    background:white;
+    width:1000px;
+    height:600px;
+    z-index:2;
+    text-align:center;
+    padding:30px;
+    box-sizing:border-box;
+    border-radius: 20px;
+}
+.popup .close-btn{
+    position:absolute;
+    right:20px;
+    top:20px;
+    width:30px;
+    height:30px;
+    background:#222;
+    color:white;
+    font-size:25px;
+    font-weight:600;
+    line-height:30px;
+    text-align:center;
+    border-radius:50%;
+    cursor:pointer;
+}
+.popup.active .overlay{
+    display:block;
+}
+.popup.active .content{
+    transition:all 300ms ease-in-out;
+    transform:translate(-50%,-110%) scale(1);
+}
+.popup .overlay-close{
+    cursor:auto;
+}
+.popup h1{
+    font-size:80px; 
+}
+.pfp_tc{
+    width:300px;
+    float:left;
+    height:auto;
+    border-radius: 50%;
+    margin-left: 20px;
+}
+.dtc{
+    text-align:left;
+    top:50px;
+    right:10px;
+    color:black;
+}
+.content h3{
+    display:inline;
+}
+.content h4{
+    display:inline;
+    
+}
+.content h5{
+    display:none;
+}
+.card-booking h4,form{
+    display:inline; 
+    
+}
+.join{
+     transform:translate(1520%,-50%);
+     font-size: 30px;
+     background:red;
+     border-radius: 10px;
+     padding:5px;
+}
+.join:hover{
+    background:rgb(242, 108, 108);
+}
+.searchDate{
+    font-size:20px;
+}
+.searchDate input{
+    background:rgb(217, 215, 215);
+    border-radius: 10px;
+    font-size:20px;
+}
+.searchDate button{
+    padding:5px;
+    border-radius: 10px;
+    font-size:20px;
+}
+.searchDate button:hover{
+    background:rgb(181, 179, 179);
+}
+.time{
+    text-align: right;
+    margin-right:200px;
+}
+.time h4{
+    margin-right:10px;
+}
+.time button{
+     font-size: 20px;
+     background:red;
+     color:white;   
+     border-radius: 10px;
+     padding:5px;
+}
+.time button:hover{
+    background:rgb(245, 135, 5);
+}
+.card-tiga h1{
+    font-size: 40px;
+    padding:20px;
+}
+.titlecolor{
+    color:orange;
+}
+/*.main-skills .card h3{
+    margin:10px;
+    text-transform:capitalize;
+}
+.main-skills .card p{
+    font-size:12px;
+}
+.main-skills .card button{
+    background:red;
+    color:white;
+    padding:7px 15px;
+    border-radius:10px;
+    margin-top:15px;
+    cursor:pointer;
+}
+.main-skills .card button:hover{
+    background:red;
+}
+.main-skills .card i{
+    font-size:22px;
+    padding:10px;
+}
+.main-skills .card h3{
+    margin:10px;
+    text-transform:capitalize;
+}
+.main-skills .card p{
+    font-size:12px;
+}
+.main-skills .card button{
+    background:red;
+    color:white;
+    padding:7px 15px;
+    border-radius:10px;
+    margin-top:15px;
+    cursor:pointer;
+}
+.main-skills .card button:hover{
+    background:orange;
+}
+.main-skills .card i{
+    font-size:22px;
+    padding:10px;
+}
+.main-course{
+    margin-top:20px;
+    text-transform:capitalize;
+}
+.course-box{
+    width:100%;
+    padding:10px;
+    margin-top:10px;
+    background:white;
+    border-radius:10px;
+    box-shadow:0 20px 35px black;
+}
+.course-box ul{
+    list-style:none;
+    display:flex;
+}
+.course-box ul li{
+    margin:10px;
+    color:gray;
+    cursor:pointer;
+}
+.course-box ul .active{
+    color:black;
+    border-bottom:1px solid black;
+}
+.course-box .course{
+    display:flex;
+}
+.box{
+    width:33%;
+    padding:10px;
+    margin:10px;
+    border-radius:10px;
+    background:white;
+    box-shadow:0 20px 35px black;
+}
+.box p{
+    font-size:12px;
+    margin-top:5px;
+}
+.box button{
+    background:black;
+    color:white;
+    padding:7px 10px;
+    border-radius:10px;
+    margin-top:3rem;
+    cursor:pointer;
+}
+.box button:hover{
+    background:black;
+}
+.box i{
+    font-size:7rem;
+    float:right;
+    margin:-20px 20px 20px 0;
+}
+.html{
+    color:red;
+}
+.css{
+    color:blue;
+}
+.js{
+    color:yellow;
+}*/
